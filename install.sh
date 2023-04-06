@@ -23,3 +23,8 @@ sudo apt install -y dotnet-sdk-7.0
 #install neovim
 wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb  -P /tmp
 cd /tmp && sudo apt install -y ./nvim-linux64.deb
+
+wget https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.0.935/gcm-linux_amd64.2.0.935.deb -P /tmp
+cd /tmp && sudo dpkg -i gcm-linux_amd64.2.0.935.deb
+git-credential-manager configure
+

@@ -28,3 +28,7 @@ wget https://github.com/git-ecosystem/git-credential-manager/releases/download/v
 cd /tmp && sudo dpkg -i gcm-linux_amd64.2.0.935.deb
 git-credential-manager configure
 
+#setup gpg, pass and the GPG key pair
+
+sudo apt install -y pass
+gpg --gen-key
